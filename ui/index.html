@@ -1,26 +1,87 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-     <center>   <B>  <U><a href="/article-one"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQieqaRENKraaJxYUK2lo82SB9cqgucpGvCwl1sCHqnHpN4wArluQ">
-     ArTiClE-OnE</a> <a href="/article-two"><img src="http://simplebooklet.com/userFiles/a/2/7/9/1/4/5/4v9Ch8ECrY2FFsBttBWD0V/YMyovnnF.jpeg">
-     ArTiClE-tWo</a> <a href="/article-three"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKxrvHxZjFPGR3gg9ora-DYgw6pVii5kBzVJIaQcxhG8bvbWQd">
-     ArTicLe-ThReE</a></U></B> </center>
-   
-    
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #container ul{
+        list-style:none;
+    }
+    #container ul li{
+        background-color: chartreuse;
+        width: 150px;
+        border:1px solid white;
+        height:40px;
+        line-height: 50px;
+        text-align: center;
+        float: left;
+        color: brown;
+        font-size: 18px;
+        position: relative;
+ }
+    #container ul li:hover
+    {
+        background-color: aqua;
 
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            By :--> Namy(Web Developer) 
-          
-            
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+    }
+    #container ul ul{
+        display: none;
+    }
+    #container ul li:hover>ul{
+        display: block;
+
+    }
+    #container ul ul ul{
+        margin-left: 150px;
+        top:0px;
+        position:absolute;
+    }
+</style>
+
+<body>
+<div id="Container">
+    <ul>
+        <li>HoMe</li>
+        <li>AbOuT</li>
+        <ul>
+            <li>
+                Life
+                <ul>
+                    <li>
+                        Origin
+                    </li>
+                    <li>
+                        College
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Education
+            </li>
+            <li>
+                Future
+            </li>
+        </ul>
+        <li>DowNLoAdS</li>
+        <li>HiStOrY</li>
+        <li>ConTaCt</li>
+
+    </ul>
+</div>
+
+
+
+<div class="center">
+    <img src="/ui/madi.png" class="img-medium"/>
+</div>
+<br>
+<div class="center text-big bold">
+    By :--> Namy(Web Developer)
+
+
+</div>
+<script type="text/javascript" src="/ui/main.js">
+</script>
+</body>
 </html>
